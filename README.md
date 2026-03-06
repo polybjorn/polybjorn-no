@@ -31,7 +31,7 @@ src/
   pages/no/                 — norske sider
   data/                     — innhold som JS-objekter
 scripts/
-  prepare-deploy.mjs        — deler byggutdata for distribusjon til to repoer
+  prepare-deploy.mjs        — forbereder deploy til to repoer
 ```
 
 ## Personvern
