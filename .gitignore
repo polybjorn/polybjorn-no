@@ -1,6 +1,0 @@
-.DS_Store
-.env
-*.pem
-*.key
-*.p12
-*.kdbx
