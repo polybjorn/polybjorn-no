@@ -45,7 +45,7 @@
     so nothing has to be created at the point of failure - and being rendered
     here it carries this component's scope, which a script-created node would
     not.
-  --> <p class="field-error" id="orderType-error" hidden data-astro-cid-jqcln2w5></p> </div> </div><div class="field-row field-row-1" data-astro-cid-64xbdqyl> <div class="field" data-field="copyright" data-astro-cid-jqcln2w5>  <label class="field-label" id="copyright-label" for="copyright" data-astro-cid-jqcln2w5>Hvem eier designet?</label>  <div class="select-wrap" data-astro-cid-jqcln2w5> <select id="copyright" name="copyright" data-astro-cid-jqcln2w5> <option value="" disabled selected data-astro-cid-jqcln2w5>Velg et alternativ</option> <option value="own" data-astro-cid-jqcln2w5>Mitt eget design</option><option value="licensed" data-astro-cid-jqcln2w5>En lisensiert eller kjøpt fil</option><option value="scan" data-astro-cid-jqcln2w5>En skann av en eksisterende del</option><option value="permitted" data-astro-cid-jqcln2w5>Andres design - delt med tillatelse</option><option value="none-yet" data-astro-cid-jqcln2w5>Ikke noe design ennå - starter fra en beskrivelse</option> </select> <button type="button" class="combo-button" id="copyright-button" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="copyright-listbox" aria-labelledby="copyright-label copyright-button" hidden data-astro-cid-jqcln2w5> <span class="combo-value" data-astro-cid-jqcln2w5>Velg et alternativ</span> </button> <ul class="combo-list" id="copyright-listbox" role="listbox" aria-labelledby="copyright-label" hidden data-astro-cid-jqcln2w5> <li class="combo-option" id="copyright-option-0" role="option" aria-selected="false" data-value="own" data-astro-cid-jqcln2w5>Mitt eget design</li><li class="combo-option" id="copyright-option-1" role="option" aria-selected="false" data-value="licensed" data-astro-cid-jqcln2w5>En lisensiert eller kjøpt fil</li><li class="combo-option" id="copyright-option-2" role="option" aria-selected="false" data-value="scan" data-astro-cid-jqcln2w5>En skann av en eksisterende del</li><li class="combo-option" id="copyright-option-3" role="option" aria-selected="false" data-value="permitted" data-astro-cid-jqcln2w5>Andres design - delt med tillatelse</li><li class="combo-option" id="copyright-option-4" role="option" aria-selected="false" data-value="none-yet" data-astro-cid-jqcln2w5>Ikke noe design ennå - starter fra en beskrivelse</li> </ul> </div>     <!--
+  --> <p class="field-error" id="orderType-error" hidden data-astro-cid-jqcln2w5></p> </div> </div><div class="field-row field-row-1" data-astro-cid-64xbdqyl> <div class="field" data-field="copyright" data-astro-cid-jqcln2w5>  <label class="field-label" id="copyright-label" for="copyright" data-astro-cid-jqcln2w5>Hvem eier designet?</label>  <div class="select-wrap" data-astro-cid-jqcln2w5> <select id="copyright" name="copyright" data-astro-cid-jqcln2w5> <option value="" disabled selected data-astro-cid-jqcln2w5>Velg et alternativ</option> <option value="own" data-astro-cid-jqcln2w5>Mitt eget design</option><option value="licensed" data-astro-cid-jqcln2w5>En lisensiert eller kjøpt fil</option><option value="scan" data-astro-cid-jqcln2w5>En skann av en eksisterende del</option><option value="owned-part" data-astro-cid-jqcln2w5>En del jeg eier, designet av andre</option><option value="permitted" data-astro-cid-jqcln2w5>Andres design - delt med tillatelse</option><option value="none-yet" data-astro-cid-jqcln2w5>Ikke noe design ennå - starter fra en beskrivelse</option> </select> <button type="button" class="combo-button" id="copyright-button" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="copyright-listbox" aria-labelledby="copyright-label copyright-button" hidden data-astro-cid-jqcln2w5> <span class="combo-value" data-astro-cid-jqcln2w5>Velg et alternativ</span> </button> <ul class="combo-list" id="copyright-listbox" role="listbox" aria-labelledby="copyright-label" hidden data-astro-cid-jqcln2w5> <li class="combo-option" id="copyright-option-0" role="option" aria-selected="false" data-value="own" data-astro-cid-jqcln2w5>Mitt eget design</li><li class="combo-option" id="copyright-option-1" role="option" aria-selected="false" data-value="licensed" data-astro-cid-jqcln2w5>En lisensiert eller kjøpt fil</li><li class="combo-option" id="copyright-option-2" role="option" aria-selected="false" data-value="scan" data-astro-cid-jqcln2w5>En skann av en eksisterende del</li><li class="combo-option" id="copyright-option-3" role="option" aria-selected="false" data-value="owned-part" data-astro-cid-jqcln2w5>En del jeg eier, designet av andre</li><li class="combo-option" id="copyright-option-4" role="option" aria-selected="false" data-value="permitted" data-astro-cid-jqcln2w5>Andres design - delt med tillatelse</li><li class="combo-option" id="copyright-option-5" role="option" aria-selected="false" data-value="none-yet" data-astro-cid-jqcln2w5>Ikke noe design ennå - starter fra en beskrivelse</li> </ul> </div>     <!--
     Filled in by IntakeForm.astro when a submit is refused. Every field has one,
     so nothing has to be created at the point of failure - and being rendered
     here it carries this component's scope, which a script-created node would
@@ -201,6 +201,8 @@ const addFilesLabel = "Legg til flere filer";
 const removeFileLabel = "Fjern {file}";
 const submitMissingNote = "Noe mangler - se feltene som er merket ovenfor.";
 const placeholderSets = {"projectName":["Sensorhus","Monteringsjigg","Pumpehjul","Girkassedeksel","Kabelkanal","Målejigg"]};
+const copyrightByOrderType = {"file":["own","licensed","scan","permitted"],"sketch":["own","owned-part","permitted","none-yet"],"physical":["own","owned-part","permitted"],"idea":["none-yet"]};
+const choosePlaceholder = "Velg et alternativ";
 const invalidEmailMessage = "E-postadressen ser ikke riktig ut.";
 const descriptionTooShort = "Skriv noen ord om hva delen skal gjøre.";
 const invalidPhoneMessage = "Telefonnummeret ser ikke riktig ut.";
@@ -566,6 +568,20 @@ const numberLocale = "nb-NO";
       // moving through a list is not answering with everything you pass.
       let active = -1;
 
+      // Some options can be taken out of the list by the answer to an earlier
+      // question - see the dependency wiring at the end of this block - so
+      // every place that walks the list walks the part of it that is on screen.
+      // Indexes stay indexes into `options` throughout: the ids in the markup
+      // are fixed, and aria-activedescendant has to name the real one.
+      const onScreen = () => options.map((option, i) => (option.hidden ? -1 : i)).filter(i => i >= 0);
+      const stepFrom = (index, direction) => {
+        const live = onScreen();
+        if (!live.length) return -1;
+        const at = live.indexOf(index);
+        if (at < 0) return live[0];
+        return live[Math.min(Math.max(at + direction, 0), live.length - 1)];
+      };
+
       function setActive(index, scroll) {
         active = index;
         options.forEach((option, i) => option.classList.toggle('is-active', i === index));
@@ -584,8 +600,9 @@ const numberLocale = "nb-NO";
         // Opening lands on what is already chosen, or on the first option when
         // nothing is - not on nothing, which leaves the arrow keys with no
         // starting point.
-        const chosen = options.findIndex(option => option.dataset.value === select.value);
-        setActive(chosen >= 0 ? chosen : 0, true);
+        const live = onScreen();
+        const chosen = options.findIndex(option => option.dataset.value === select.value && !option.hidden);
+        setActive(chosen >= 0 ? chosen : (live.length ? live[0] : -1), true);
       }
 
       function close() {
@@ -597,7 +614,7 @@ const numberLocale = "nb-NO";
 
       function choose(index) {
         const option = options[index];
-        if (!option) return;
+        if (!option || option.hidden) return;
         select.value = option.dataset.value;
         shown.textContent = option.textContent;
         shown.classList.add('has-value');
@@ -617,23 +634,27 @@ const numberLocale = "nb-NO";
           case 'ArrowDown':
             event.preventDefault();
             if (list.hidden) open();
-            else setActive(Math.min(active + 1, options.length - 1), true);
+            else setActive(stepFrom(active, 1), true);
             break;
           case 'ArrowUp':
             event.preventDefault();
             if (list.hidden) open();
-            else setActive(Math.max(active - 1, 0), true);
+            else setActive(stepFrom(active, -1), true);
             break;
-          case 'Home':
+          case 'Home': {
             if (list.hidden) break;
             event.preventDefault();
-            setActive(0, true);
+            const live = onScreen();
+            if (live.length) setActive(live[0], true);
             break;
-          case 'End':
+          }
+          case 'End': {
             if (list.hidden) break;
             event.preventDefault();
-            setActive(options.length - 1, true);
+            const live = onScreen();
+            if (live.length) setActive(live[live.length - 1], true);
             break;
+          }
           case 'Enter':
           case ' ':
             event.preventDefault();
@@ -662,6 +683,108 @@ const numberLocale = "nb-NO";
       document.addEventListener('click', (event) => {
         if (!wrap.contains(event.target)) close();
       });
+
+      // The one place on this form where one question takes answers away from
+      // another: what you have decides which answers to "who owns the design"
+      // can be true. Which ones, and why the rule is contradiction rather than
+      // likelihood, is in COPYRIGHT_BY_ORDER_TYPE.
+      const allowedFor = select.id === 'copyright' ? copyrightByOrderType : null;
+      if (allowedFor) {
+        const nativeFor = value => Array.from(select.options).find(option => option.value === value);
+
+        const field = wrap.closest('[data-field]');
+
+        // A row that vanishes between two frames reads as a glitch rather than
+        // as an answer being taken off the table, and the page moves under the
+        // thumb that just tapped. So it collapses: height and the field's own
+        // bottom margin, which is what the row above actually feels, plus the
+        // fade.
+        //
+        // Measured and animated rather than transitioned from a CSS class,
+        // because the height it has to leave from is whatever the label and the
+        // control add up to at this width - a max-height guess either clips the
+        // field or spends the first half of the ease going nowhere. Every other
+        // moving part on this page is a CSS transition; this one cannot be.
+        //
+        // No Web Animations (jsdom, and anything old enough to lack it) or
+        // reduced motion: the row goes at once, which is the behaviour before
+        // this and is not wrong, only abrupt.
+        const canAnimate = !prefersReducedMotion && typeof field?.animate === 'function';
+        const outerHeight = () =>
+          field.offsetHeight + (parseFloat(getComputedStyle(field).marginBottom) || 0);
+        let collapsing = null;
+        let settled = false;
+
+        const setFieldShown = shown => {
+          if (!field) return;
+          if (!canAnimate || !settled) {
+            field.hidden = !shown;
+            return;
+          }
+          if (shown === !field.hidden && !collapsing) return;
+          // An answer changed twice before the first collapse finished is one
+          // interruption, not a queue: cancel and measure where it is now.
+          if (collapsing) collapsing.cancel();
+          if (shown) field.hidden = false;
+          const height = shown ? outerHeight() : field.offsetHeight;
+          const margin = parseFloat(getComputedStyle(field).marginBottom) || 0;
+          const shut = { height: '0px', marginBottom: '0px', opacity: 0 };
+          const open = { height: (shown ? height - margin : height) + 'px', marginBottom: margin + 'px', opacity: 1 };
+          field.style.overflow = 'hidden';
+          collapsing = field.animate(shown ? [shut, open] : [open, shut], {
+            duration: shown ? 200 : 160,
+            easing: 'ease',
+          });
+          collapsing.finished.then(() => {
+            field.hidden = !shown;
+            field.style.overflow = '';
+            collapsing = null;
+          }, () => {});
+        };
+
+        const applyAllowed = () => {
+          const picked = form.querySelector('input[name="orderType"]:checked');
+          const allowed = picked ? allowedFor[picked.value] : null;
+          // One answer left is not a question. "Bare en idé" rules out four of
+          // the five, and a dropdown holding the fifth is a click that cannot
+          // be wrong - and the answer it would record is the one just given a
+          // question higher up, which the brief already carries directly above
+          // it. So the row goes, and nothing is recorded on anyone's behalf.
+          const soleAnswer = Boolean(allowed && allowed.length === 1);
+          setFieldShown(!soleAnswer);
+          options.forEach(option => {
+            const keep = !allowed || allowed.includes(option.dataset.value);
+            option.hidden = !keep;
+            const native = nativeFor(option.dataset.value);
+            if (native) {
+              native.hidden = !keep;
+              native.disabled = !keep;
+            }
+          });
+          // The one way this could come to record something untrue: answer
+          // here, change your mind above, and the answer that no longer fits
+          // rides along from a control nobody can see. So it goes - with a
+          // change event, because the marks and the receipt read the select
+          // and not the button.
+          if (select.value && (soleAnswer || (allowed && !allowed.includes(select.value)))) {
+            select.value = '';
+            shown.textContent = choosePlaceholder;
+            shown.classList.remove('has-value');
+            options.forEach(option => option.setAttribute('aria-selected', 'false'));
+            select.dispatchEvent(new Event('change', { bubbles: true }));
+          }
+          close();
+        };
+
+        form.querySelectorAll('input[name="orderType"]').forEach(input => {
+          input.addEventListener('change', applyAllowed);
+        });
+        // A reload can restore a checked radio without firing an event. That
+        // pass is the page settling, not an answer changing, so it does not
+        // animate - a row cannot collapse out of a state nobody saw it in.
+        applyAllowed();
+        settled = true;
+      }
     });
 
     // Nothing in the form is gated: Continue always moves on, and Send is the
