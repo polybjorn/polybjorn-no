@@ -3,13 +3,13 @@
         arrives with it non-empty is worth dropping server-side - the check
         has to happen at the receiving endpoint, this form only carries the
         field.
-      --> <input type="hidden" name="lang" value="no" data-astro-cid-64xbdqyl> <div class="honeypot" aria-hidden="true" data-astro-cid-64xbdqyl> <label for="website" data-astro-cid-64xbdqyl>Website</label> <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" data-astro-cid-64xbdqyl> </div> <fieldset id="stage-about" class="stage" tabindex="-1" data-astro-cid-64xbdqyl> <!--
+      --><input type="hidden" name="lang" value="no" data-astro-cid-64xbdqyl> <div class="honeypot" aria-hidden="true" data-astro-cid-64xbdqyl> <label for="website" data-astro-cid-64xbdqyl>Website</label> <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" data-astro-cid-64xbdqyl> </div> <fieldset id="stage-about" class="stage" tabindex="-1" data-astro-cid-64xbdqyl> <!--
           Kept for the fieldset and for screen readers, hidden from the page:
           the h1 two lines above already says "Fortell om delen din", so
           "Om delen" was the same words twice. The later headings are not
           redundant - they name different topics, and they arrive on their own
           after a Continue rather than under a title that already covers them.
-        --> <legend class="visually-hidden" data-astro-cid-64xbdqyl>Om delen</legend> <div class="field" data-field="projectName" data-astro-cid-jqcln2w5>  <label class="field-label" id="projectName-label" for="projectName" data-astro-cid-jqcln2w5>Prosjekt- eller delnavn</label>    <div class="input-with-note" data-astro-cid-jqcln2w5> <input type="text" id="projectName" name="projectName" placeholder="Sensorhus" data-astro-cid-jqcln2w5>   </div>   <!--
+        --><legend class="visually-hidden" data-astro-cid-64xbdqyl>Om delen</legend> <div class="field" data-field="projectName" data-astro-cid-jqcln2w5>  <label class="field-label" id="projectName-label" for="projectName" data-astro-cid-jqcln2w5>Prosjekt- eller delnavn</label>    <div class="input-with-note" data-astro-cid-jqcln2w5> <input type="text" id="projectName" name="projectName" placeholder="Sensorhus" data-astro-cid-jqcln2w5>   </div>   <!--
     Filled in by IntakeForm.astro when a submit is refused. Every field has one,
     so nothing has to be created at the point of failure - and being rendered
     here it carries this component's scope, which a script-created node would
@@ -25,7 +25,7 @@
             "Browse"/"Choose File" is the browser's own UI language, not
             ours, so a styled label is the only way to get Norwegian text on
             the trigger itself.
-          --> <input type="file" id="fileUpload" name="fileUpload" multiple="true" class="file-input-visually-hidden" data-astro-cid-jqcln2w5> <div class="file-pick" data-astro-cid-jqcln2w5> <label for="fileUpload" class="file-trigger" id="fileUpload-trigger" data-astro-cid-jqcln2w5>Velg filer</label> <p class="field-help file-help" data-astro-cid-jqcln2w5>Bilder, skisser eller 3D-filer. 10 MB per fil.</p> </div> <ul class="file-list" id="fileUpload-list" hidden data-astro-cid-jqcln2w5></ul> <!--
+          --><input type="file" id="fileUpload" name="fileUpload" multiple="true" class="file-input-visually-hidden" data-astro-cid-jqcln2w5> <div class="file-pick" data-astro-cid-jqcln2w5> <label for="fileUpload" class="file-trigger" id="fileUpload-trigger" data-astro-cid-jqcln2w5>Velg filer</label> <p class="field-help file-help" data-astro-cid-jqcln2w5>Bilder, skisser eller 3D-filer. 10 MB per fil.</p> </div> <ul class="file-list" id="fileUpload-list" hidden data-astro-cid-jqcln2w5></ul> <!--
             Only shown if the browser cannot rebuild a FileList, in which case
             adding and removing are not on offer and the native
             replace-the-lot behaviour is all there is.
@@ -171,7 +171,7 @@
             and the native validation bubble it would otherwise rely on is
             styled by the browser, written in the browser's UI language rather
             than the page's, and gone on the next scroll.
-          --> <div class="form-error" id="submit-error" role="alert" hidden data-astro-cid-64xbdqyl></div> <!--
+          --><div class="form-error" id="submit-error" role="alert" hidden data-astro-cid-64xbdqyl></div> <!--
             No progress marker on this card. Four of four is where the form ends:
             the dots are there to say how much is left, and by here the answer is
             the button next to them. Their absence also leaves the row to the
@@ -1276,4 +1276,4 @@ const numberLocale = "nb-NO";
       clearFieldErrorIfResolved(event.target);
       clearSubmitErrorIfResolved();
     });
-  })();</script> <script type="module">var e=document.querySelector(`.corner-link:not(.repo-link)`);e&&window.addEventListener(`scroll`,()=>{e.classList.toggle(`hidden`,window.scrollY>60)},{passive:!0});</script></body> </html>
+  })();</script><script type="module">var e=document.querySelector(`.corner-link:not(.repo-link)`);e&&window.addEventListener(`scroll`,()=>{e.classList.toggle(`hidden`,window.scrollY>60)},{passive:!0});</script></body> </html>
