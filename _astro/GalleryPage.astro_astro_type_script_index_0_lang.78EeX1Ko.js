@@ -1,0 +1,1 @@
+var e=document.querySelector(`.back-home`);window.addEventListener(`scroll`,()=>{e.classList.toggle(`hidden`,window.scrollY>60)},{passive:!0});
