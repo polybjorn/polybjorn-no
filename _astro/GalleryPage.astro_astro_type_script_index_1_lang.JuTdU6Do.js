@@ -1,0 +1,1 @@
+var e=document.getElementById(`grid`),t=Array.from(e.querySelectorAll(`img`)),n=0,r=Math.min(t.length,8),i=()=>{n++,n>=r&&requestAnimationFrame(()=>e.classList.add(`ready`))};t.slice(0,r).forEach(e=>{e.complete?i():(e.addEventListener(`load`,i),e.addEventListener(`error`,i))}),setTimeout(()=>e.classList.add(`ready`),3e3);
