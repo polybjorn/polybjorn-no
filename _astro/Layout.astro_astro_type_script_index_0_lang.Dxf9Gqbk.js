@@ -1,0 +1,1 @@
+var e=document.querySelector(`.corner-link:not(.repo-link)`);e&&window.addEventListener(`scroll`,()=>{e.classList.toggle(`hidden`,window.scrollY>60)},{passive:!0}),document.querySelectorAll(`.to-top`).forEach(e=>{e.addEventListener(`click`,t=>{t.preventDefault(),window.scrollTo({top:0,behavior:`smooth`}),e.classList.remove(`visible`)})});

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="A doughnut chart in three colors beside a rising line chart">
+  <rect width="640" height="360" fill="#15181d"/>
+  <g transform="translate(190,180) rotate(-90)" fill="none" stroke-width="34">
+    <circle r="82" stroke="#6aaeee" stroke-dasharray="242 273.2"/>
+    <circle r="82" stroke="#7ee787" stroke-dasharray="140 375.2" stroke-dashoffset="-252"/>
+    <circle r="82" stroke="#e8b775" stroke-dasharray="103 412.2" stroke-dashoffset="-402"/>
+  </g>
+  <g stroke="#23272e" stroke-width="4">
+    <line x1="340" y1="110" x2="560" y2="110"/>
+    <line x1="340" y1="180" x2="560" y2="180"/>
+    <line x1="340" y1="250" x2="560" y2="250"/>
+  </g>
+  <polyline points="350,240 400,200 450,215 500,150 550,120" fill="none" stroke="#7ee787" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#15181d" stroke="#7ee787" stroke-width="8">
+    <circle cx="350" cy="240" r="10"/>
+    <circle cx="400" cy="200" r="10"/>
+    <circle cx="450" cy="215" r="10"/>
+    <circle cx="500" cy="150" r="10"/>
+    <circle cx="550" cy="120" r="10"/>
+  </g>
+</svg>
