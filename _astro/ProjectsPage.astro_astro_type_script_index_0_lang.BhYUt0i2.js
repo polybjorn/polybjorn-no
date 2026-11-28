@@ -1,0 +1,1 @@
+var e=document.querySelector(`.back-home`),t=document.querySelector(`.to-top`);window.addEventListener(`scroll`,()=>{e.classList.toggle(`hidden`,window.scrollY>60),t.classList.toggle(`visible`,window.scrollY+window.innerHeight>=document.documentElement.scrollHeight-20)},{passive:!0});

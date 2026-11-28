@@ -1,0 +1,4 @@
+Contact: mailto:security@polybjorn.com
+Expires: 2027-11-01T00:00:00Z
+Encryption: https://polybjorn.com/pubkey.asc
+Preferred-Languages: en, no
